@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTA FISCAL</title>
+    <link rel="stylesheet" href="../_CSS/CadastroNota.css">
+</head>
+
+<body>
+    <div>
+        <form method="post" action="../_PHP/CadastroNota.php">
+            <h1>NOTA FISCAL</h1>
+            <label>Número:<p></p><input class="a" type="number" name="num"></label><br>
+            <label>Data de Saída:<p></p><input class="a" type="date" name="date"></label><br>
+            <label>CFOP:<p></p><input class="a" type="number" name="cfop"></label><br>
+            <label>Método:
+                <br><br>
+                <p></p>
+                <input class="b" type="radio" name="metodo" value="1">Entrada
+                <input class="b" type="radio" name="metodo" value="2">Saida
+            </label><br><br><br>
+            <label>Forma de Pagamento:
+                <p></p>
+                <select name="forma">
+                    <option value="1">Pix</option>
+                    <option value="2">Débito</option>
+                    <option value="3">Crédito</option>
+                    <option value="4">Dinheiro</option>
+                </select>
+            </label><br>
+            <label>Banco:<p></p><input class="a" type="text" name="Banco"></label><br>
+            <label>Tarifa ICMS:<p></p><input class="a" type="number" name="icms"></label><br>
+            <label>Tarifa IPI:<p></p><input class="a" type="number" name="ipi"></label><br>
+            <label>CPF/CNPJ:<p></p><input class="a" type="number" name="cpf"></label><br>
+            <fieldset>
+                <input class="btt" type="submit" value="CADASTRAR">
+                <input class="btt" type="reset" value="RESETAR">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
