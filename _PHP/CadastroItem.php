@@ -5,7 +5,7 @@ $cod = $_POST['cod'];
 $quant = $_POST['quant'];
 $desc = $_POST['desc'];
 $valu = $_POST['valu'];
-$valt = $_POST['valu'];
+$valt;
 
 $valt = $valu * $quant;
 
